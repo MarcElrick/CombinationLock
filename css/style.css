@@ -1,0 +1,17 @@
+* {
+    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0px 0px;
+    background-color: red;
+}
+.contents {
+    display: block;
+    display: -webkit-flex;
+    background-color: purple;
+    height: 360px;
+    margin: 0;
+}
+#canvas {
+    background-color: black;
+}
