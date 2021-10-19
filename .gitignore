@@ -16,3 +16,5 @@
 *.tmp
 *~
 res/edje/*.edj
+
+*.wgt
