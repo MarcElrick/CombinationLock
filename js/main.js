@@ -2,7 +2,7 @@ const global_ticks = 20
 
 window.onload = function() {
     // TODO:: Do your initialization job
-
+	document.addEventListener('rotarydetent', onBezelRotate)
     // add eventListener for tizenhwkey
     document.addEventListener('tizenhwkey', function(e) {
         if (e.keyName == "back")

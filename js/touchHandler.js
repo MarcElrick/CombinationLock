@@ -46,3 +46,17 @@ function touchInRange(event) {
     return Math.sqrt(x * x + y * y) > 90
 
 }
+
+function onBezelRotate(ev) {
+    var direction = ev.detail.direction;
+
+    if (direction == 'CW') {
+        /* Add behavior for clockwise rotation */
+        rotation -= Math.PI/global_ticks
+    } else if (direction == 'CCW') {
+        /* Add behavior for counter-clockwise rotation */
+        rotation += Math.PI/global_ticks
+    }
+    
+    update_canvas(global_ticks)
+}
