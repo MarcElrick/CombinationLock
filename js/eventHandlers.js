@@ -3,7 +3,9 @@ var previousX = 0
 var previousY = 0
 
 var centerTouched = false
-var enteredPassword = []
+
+var timeSinceRotation = 0;
+const d = new Date();
 
 function init_touch_handler() {
 	var canvas = document.getElementById('canvas');
@@ -14,9 +16,9 @@ function init_touch_handler() {
 
 function onMove(event) {
 	event.preventDefault();
-
 	if (!touchInRange(event)) {
 		return	
+
 	}
 	const
 	newX = event.changedTouches[0].pageX;
@@ -42,14 +44,14 @@ function onMove(event) {
 	}
 
 	if (new_direction !== global_direction
-			&& selectionMethod === selectionModes.DIRECTION) {
+			&& getSelectionMethod() === selectionModes.DIRECTION) {
 		submitValue()
 		global_direction = new_direction;
 	}
 
 	previousX = event.changedTouches[0].pageX
 	previousY = event.changedTouches[0].pageY
-	update_canvas(global_ticks);
+	update_canvas(getTicks());
 }
 
 function onDown(event) {
@@ -59,14 +61,23 @@ function onDown(event) {
 	if (!touchInRange(event)) {
 		centerTouched = true
 	}
+	update_canvas(getTicks());
+
 }
 
 function onUp(event) {
 	event.preventDefault();
-	if (!touchInRange(event) && selectionMethod === selectionModes.TAP) {
+	if (!touchInRange(event) && getSelectionMethod() === selectionModes.TAP) {
 		submitValue();
 	}
+
+	if (touchInRange(event) && getSelectionMethod() === selectionModes.DIRECTION) {
+		submitValue();
+	}
+
 	centerTouched = false;
+	update_canvas(getTicks());
+
 }
 
 function touchInRange(event) {
@@ -75,7 +86,8 @@ function touchInRange(event) {
 	const
 	y = event.changedTouches[0].pageY - screen_radius;
 
-	return Math.sqrt(x * x + y * y) > 90
+	update_canvas(getTicks());
+	return Math.sqrt(x * x + y * y) > 80
 
 }
 
@@ -85,17 +97,17 @@ function onBezelRotate(ev) {
 	
 	if (direction == 'CW') {
 		new_direction = directions.CLOCKWISE
-		rotation -= Math.PI / global_ticks
+		rotation -= Math.PI / getTicks()
 	} else if (direction == 'CCW') {
-		rotation += Math.PI / global_ticks
+		rotation += Math.PI / getTicks()
 		new_direction = directions.ANTICLOCKWISE
 	}
 	
 	if (new_direction !== global_direction
-			&& selectionMethod === selectionModes.DIRECTION) {
+			&& getSelectionMethod() === selectionModes.DIRECTION) {
 		submitValue()
 		global_direction = new_direction;
 	}
 
-	update_canvas(global_ticks)
+	update_canvas(getTicks())
 }

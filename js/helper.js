@@ -15,11 +15,12 @@ function rotationToValue(numTicks, rotation) {
 			% numTicks
 
 	if (value < 0)
-		value += 20
+		value += parseInt(numTicks);
 	return value
 }
 
 function submitValue() {
-	enteredPassword.push(rotationToValue(global_ticks, rotation))
-	console.log(enteredPassword)
+	addValueToPassword(rotationToValue(getTicks(), rotation))
+	navigator.vibrate(50);
+	console.log(getEnteredPassword());
 }

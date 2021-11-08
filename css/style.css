@@ -4,7 +4,7 @@
 
 body {
 	margin: 0px 0px;
-	background-color: red;
+	background-color: black;
 }
 
 .contents {
@@ -13,6 +13,31 @@ body {
 	background-color: purple;
 	height: 360px;
 	margin: 0;
+}
+
+#menu {
+	border: 1px solid black;
+	height: 360px;
+	width: 360px;
+	padding: 10px;
+	box-sizing: border-box;
+	color: white;
+}
+
+#menu ul {
+	height: 100%;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 0;
+	text-align:center;
+}
+
+#menu li {
+	background-color: gray;
+	font-size: 30px;
 }
 
 #canvas {

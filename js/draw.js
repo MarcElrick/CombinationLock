@@ -10,10 +10,11 @@ function init_canvas() {
 }
 
 function update_canvas(numTicks) {
-	context.clearRect(0, 0, canvas.width, canvas.height)
-	drawTickCircles(numTicks)
-	drawTickLabels(numTicks)
-	drawPointer()
+	context.clearRect(0, 0, canvas.width, canvas.height);
+	drawTickCircles(numTicks);
+	drawTickLabels(numTicks);
+	drawPointer();
+	drawHintDots();
 }
 
 function drawTickCircles(numTicks) {
@@ -33,8 +34,8 @@ function drawTickCircles(numTicks) {
 
 function drawTickLabels(numTicks) {
 	context.fillStyle = 'white';
-	context.font = '20px Arial'
-	context.textAlign = 'center'
+	context.font = '20px Arial';
+	context.textAlign = 'center';
 	var t;
 	const
 	text_radius = screen_radius * 18 / 20
@@ -49,12 +50,33 @@ function drawTickLabels(numTicks) {
 	// Draw center label
 	context.font = '50px Arial'
 	selectedVal = rotationToValue(numTicks, rotation);
-	context.fillText(selectedVal, screen_radius, screen_radius + 25);
+	context.fillText(selectedVal, screen_radius, screen_radius - 5);
+}
+
+function drawHintDots() {
+	context.fillStyle = 'white';
+	context.font = '40px Arial';
+
+	var passwordLength = getEnteredPassword().length > 4 ? 4
+			: getEnteredPassword().length;
+
+	var t;
+
+	for (var i = 0; i < 4; i++) {
+		var x = (screen_radius - 45) + i * 30;
+		context.fillText('_', x, screen_radius + 30);
+	}
+
+	for (var i = 0; i < passwordLength; i++) {
+		var x = (screen_radius - 45) + i * 30;
+		drawCircle(5, x, screen_radius + 25, context);
+	}
+
 }
 
 function drawBarrierCircle() {
 	context.beginPath();
-	context.arc(screen_radius, screen_radius, 90, 0, 2 * Math.PI, false);
+	context.arc(screen_radius, screen_radius, 80, 0, 2 * Math.PI, false);
 
 	context.lineWidth = 5;
 	context.strokeStyle = 'white';
