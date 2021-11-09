@@ -15,6 +15,20 @@ function update_canvas(numTicks) {
 	drawTickLabels(numTicks);
 	drawPointer();
 	drawHintDots();
+	
+	if(getEnteredPassword().length > 3){
+		navToAuthIndicator();
+	}
+}
+
+function navToAuthIndicator(){
+	const userPass = getUserPassword();
+	const enteredPass = getEnteredPassword();
+	
+	if(userPass.length == enteredPass.length && userPass.every(function(value, index) { return value === enteredPass[index]}))
+		window.location.href = "authCorrect.html";
+	else
+		window.location.href = "authIncorrect.html";
 }
 
 function drawTickCircles(numTicks) {
@@ -57,8 +71,7 @@ function drawHintDots() {
 	context.fillStyle = 'white';
 	context.font = '40px Arial';
 
-	var passwordLength = getEnteredPassword().length > 4 ? 4
-			: getEnteredPassword().length;
+	var passwordLength = getEnteredPassword().length;
 
 	var t;
 

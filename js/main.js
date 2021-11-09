@@ -18,6 +18,7 @@ var global_direction = directions.CLOCKWISE;
 
 function init_combination_lock() {
 	clearEnteredPassword();
+	setUserPassword([1,2,3,4]);
 
 	init_canvas();
 	init_touch_handler();
@@ -51,7 +52,8 @@ function getEnteredPassword() {
 	return localStorage.getItem("password").split(" ").map(function(val) {
 		return parseInt(val)
 	}).filter(function(val) {
-		return !isNaN(val);})
+		return !isNaN(val);
+	})
 }
 
 function clearEnteredPassword() {
@@ -62,4 +64,14 @@ function addValueToPassword(value) {
 	var password = getEnteredPassword();
 	password.push(value)
 	localStorage.setItem("password", password.join(' '));
+}
+
+function setUserPassword(passwordArray) {
+	localStorage.setItem("userPassword", passwordArray.join(' '))
+}
+
+function getUserPassword() {
+	return localStorage.getItem("userPassword").split(" ").map(function(val) {
+		return parseInt(val)
+	});
 }
