@@ -1,77 +1,77 @@
-var rotation = 3 / 2 * Math.PI;
-const
-screen_radius = 180;
+let rotation = (3 / 2) * Math.PI;
+const screen_radius = 180;
 
-const
-selectionModes = {
-	PAUSE : 'pause',
-	TAP : 'tap',
-	DIRECTION : 'direction',
+export const selectionModes = {
+  TAP: "tap",
+  DIRECTION: "direction",
 };
 
-const
-directions = {
-	CLOCKWISE : 'clockwise',
-	ANTICLOCKWISE : 'anticlockwise',
+export const directions = {
+  CLOCKWISE: "clockwise",
+  ANTICLOCKWISE: "anticlockwise",
 };
-var global_direction = directions.CLOCKWISE;
 
-function init_combination_lock() {
-	clearEnteredPassword();
-	setUserPassword([1,2,3,4]);
+let global_direction = directions.CLOCKWISE;
 
-	init_canvas();
-	init_touch_handler();
-	update_canvas(getTicks());
-	document.addEventListener('rotarydetent', onBezelRotate);
-	document.addEventListener('tizenhwkey', function(e) {
-		if (e.keyName === "back")
-			document.location.href = "index.html"
-	});
-}
+const init_combination_lock = () => {
+  clearEnteredPassword();
+  setUserPassword([1, 2, 3, 4]);
 
-function setSelectionMethod(method) {
-	localStorage.setItem("selectionMethod", selectionModes[method]);
+  init_canvas();
+  init_touch_handler();
+  update_canvas(getTicks());
+  document.addEventListener("rotarydetent", onBezelRotate);
+  document.addEventListener("tizenhwkey", (event) => {
+    if (event.keyName === "back") document.location.href = "index.html";
+  });
+};
 
-}
+const setSelectionMethod = (method) => {
+  localStorage.setItem("selectionMethod", selectionModes[method]);
+};
 
-function getSelectionMethod() {
-	return localStorage.getItem("selectionMethod")
-}
+const getSelectionMethod = () => {
+  return localStorage.getItem("selectionMethod");
+};
 
-function setTicks(tickNum) {
-	return localStorage.setItem("globalTicks", tickNum)
+const setTicks = (tickNum) => {
+  return localStorage.setItem("globalTicks", tickNum);
+};
+const getTicks = () => {
+  return localStorage.getItem("globalTicks");
+};
 
-}
+const getEnteredPassword = () => {
+  return localStorage
+    .getItem("password")
+    .split(" ")
+    .map((val) => {
+      return parseInt(val);
+    })
+    .filter((val) => {
+      return !isNaN(val);
+    });
+};
 
-function getTicks() {
-	return localStorage.getItem("globalTicks")
-}
+const clearEnteredPassword = () => {
+  localStorage.setItem("password", "");
+};
 
-function getEnteredPassword() {
-	return localStorage.getItem("password").split(" ").map(function(val) {
-		return parseInt(val)
-	}).filter(function(val) {
-		return !isNaN(val);
-	})
-}
+const addValueToPassword = (value) => {
+  let password = getEnteredPassword();
+  password.push(value);
+  localStorage.setItem("password", password.join(" "));
+};
 
-function clearEnteredPassword() {
-	localStorage.setItem("password", "");
-}
+const setUserPassword = (passwordArray) => {
+  localStorage.setItem("userPassword", passwordArray.join(" "));
+};
 
-function addValueToPassword(value) {
-	var password = getEnteredPassword();
-	password.push(value)
-	localStorage.setItem("password", password.join(' '));
-}
-
-function setUserPassword(passwordArray) {
-	localStorage.setItem("userPassword", passwordArray.join(' '))
-}
-
-function getUserPassword() {
-	return localStorage.getItem("userPassword").split(" ").map(function(val) {
-		return parseInt(val)
-	});
-}
+const getUserPassword = () => {
+  return localStorage
+    .getItem("userPassword")
+    .split(" ")
+    .map((val) => {
+      return parseInt(val);
+    });
+};

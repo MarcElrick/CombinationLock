@@ -1,115 +1,127 @@
-var canvas;
-var context;
-var selectedVal = 0
+let canvas;
+let context;
+let selectedVal = 0;
 
-function init_canvas() {
-	canvas = document.getElementById('canvas');
-	canvas.height = 360;
-	canvas.width = 360;
-	context = canvas.getContext('2d');
-}
+const init_canvas = () => {
+  canvas = document.getElementById("canvas");
+  canvas.height = 360;
+  canvas.width = 360;
+  context = canvas.getContext("2d");
+};
 
-function update_canvas(numTicks) {
-	context.clearRect(0, 0, canvas.width, canvas.height);
-	drawTickCircles(numTicks);
-	drawTickLabels(numTicks);
-	drawPointer();
-	drawHintDots();
-	
-	if(getEnteredPassword().length > 3){
-		navToAuthIndicator();
-	}
-}
+const update_canvas = (numTicks) => {
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  drawTickCircles(numTicks);
+  drawTickLabels(numTicks);
+  drawPointer();
+  drawHintDots();
 
-function navToAuthIndicator(){
-	const userPass = getUserPassword();
-	const enteredPass = getEnteredPassword();
-	
-	if(userPass.length == enteredPass.length && userPass.every(function(value, index) { return value === enteredPass[index]}))
-		window.location.href = "authCorrect.html";
-	else
-		window.location.href = "authIncorrect.html";
-}
+  if (getEnteredPassword().length > 3) {
+    navToAuthIndicator();
+  }
+};
 
-function drawTickCircles(numTicks) {
-	const
-	dot_radius = screen_radius * 15 / 20;
-	var t;
-	for (var i = 0; i < numTicks; i++) {
-		t = (2 * Math.PI * i) / numTicks;
-		var x = screen_radius + dot_radius * Math.cos(t + rotation)
-		var y = screen_radius + dot_radius * Math.sin(t + rotation)
+const navToAuthIndicator = () => {
+  const userPass = getUserPassword();
+  const enteredPass = getEnteredPassword();
 
-		drawCircle(5, x, y, context);
-	}
+  if (
+    userPass.length == enteredPass.length &&
+    userPass.every((value, index) => {
+      return value === enteredPass[index];
+    })
+  )
+    window.location.href = "authCorrect.html";
+  else window.location.href = "authIncorrect.html";
+};
 
-	drawBarrierCircle()
-}
+const drawTickCircles = (numTicks) => {
+  const dot_radius = (screen_radius * 15) / 20;
+  let t;
+  for (let i = 0; i < numTicks; i++) {
+    t = (2 * Math.PI * i) / numTicks;
+    let x = screen_radius + dot_radius * Math.cos(t + rotation);
+    let y = screen_radius + dot_radius * Math.sin(t + rotation);
 
-function drawTickLabels(numTicks) {
-	context.fillStyle = 'white';
-	context.font = '20px Arial';
-	context.textAlign = 'center';
-	var t;
-	const
-	text_radius = screen_radius * 18 / 20
-	for (var i = 0; i < numTicks; i++) {
-		t = (2 * Math.PI * i) / numTicks;
-		var x = screen_radius + text_radius * Math.cos(t + rotation)
-		var y = screen_radius + text_radius * Math.sin(t + rotation) + 10
+    drawCircle(5, x, y, context);
+  }
 
-		context.fillText(i, x, y)
-	}
+  drawBarrierCircle();
+};
 
-	// Draw center label
-	context.font = '50px Arial'
-	selectedVal = rotationToValue(numTicks, rotation);
-	context.fillText(selectedVal, screen_radius, screen_radius - 5);
-}
+const drawTickLabels = (numTicks) => {
+  context.fillStyle = "white";
+  context.font = "20px Arial";
+  context.textAlign = "center";
+  let t;
+  const text_radius = (screen_radius * 18) / 20;
+  for (let i = 0; i < numTicks; i++) {
+    t = (2 * Math.PI * i) / numTicks;
+    let x = screen_radius + text_radius * Math.cos(t + rotation);
+    let y = screen_radius + text_radius * Math.sin(t + rotation) + 10;
 
-function drawHintDots() {
-	context.fillStyle = 'white';
-	context.font = '40px Arial';
+    context.fillText(i, x, y);
+  }
 
-	var passwordLength = getEnteredPassword().length;
+  // Draw center label
+  context.font = "50px Arial";
+  selectedVal = rotationToValue(numTicks, rotation);
+  context.fillText(selectedVal, screen_radius, screen_radius - 5);
+};
 
-	var t;
+const drawHintDots = () => {
+  context.fillStyle = "white";
+  context.font = "40px Arial";
 
-	for (var i = 0; i < 4; i++) {
-		var x = (screen_radius - 45) + i * 30;
-		context.fillText('_', x, screen_radius + 30);
-	}
+  let passwordLength = getEnteredPassword().length;
 
-	for (var i = 0; i < passwordLength; i++) {
-		var x = (screen_radius - 45) + i * 30;
-		drawCircle(5, x, screen_radius + 25, context);
-	}
+  let t;
 
-}
+  for (let i = 0; i < 4; i++) {
+    let x = screen_radius - 45 + i * 30;
+    context.fillText("_", x, screen_radius + 30);
+  }
 
-function drawBarrierCircle() {
-	context.beginPath();
-	context.arc(screen_radius, screen_radius, 80, 0, 2 * Math.PI, false);
+  for (let i = 0; i < passwordLength; i++) {
+    let x = screen_radius - 45 + i * 30;
+    drawCircle(5, x, screen_radius + 25, context);
+  }
+};
 
-	context.lineWidth = 5;
-	context.strokeStyle = 'white';
-	context.stroke();
-}
+const drawBarrierCircle = () => {
+  context.beginPath();
+  context.arc(screen_radius, screen_radius, 80, 0, 2 * Math.PI, false);
 
-function drawCircle(radius, x, y) {
-	context.beginPath();
-	context.arc(x, y, radius, 0, 2 * Math.PI, false);
-	context.fillStyle = 'cyan';
-	context.fill();
-}
+  context.lineWidth = 5;
+  context.strokeStyle = "white";
+  context.stroke();
 
-function drawPointer() {
-	context.fillStyle = 'red'
-	context.beginPath();
-	context.moveTo(screen_radius, screen_radius * 7 / 20);
-	context.lineTo(screen_radius + 10, screen_radius * 9 / 20);
-	context.lineTo(screen_radius - 10, screen_radius * 9 / 20);
-	context.lineTo(screen_radius, screen_radius * 7 / 20);
+  context.beginPath();
+  context.arc(
+    screen_radius,
+    screen_radius,
+    screen_radius,
+    0,
+    2 * Math.PI,
+    false
+  );
+  context.stroke();
+};
 
-	context.fill();
-}
+const drawCircle = (radius, x, y) => {
+  context.beginPath();
+  context.arc(x, y, radius, 0, 2 * Math.PI, false);
+  context.fillStyle = "cyan";
+  context.fill();
+};
+
+const drawPointer = () => {
+  context.fillStyle = "red";
+  context.beginPath();
+  context.moveTo(screen_radius, (screen_radius * 7) / 20);
+  context.lineTo(screen_radius + 10, (screen_radius * 9) / 20);
+  context.lineTo(screen_radius - 10, (screen_radius * 9) / 20);
+  context.lineTo(screen_radius, (screen_radius * 7) / 20);
+
+  context.fill();
+};

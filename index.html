@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
 
-<head>
-<meta charset="utf-8" />
-<meta name="viewport"
-	content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>
+      Tizen Wearable Web IDE - Tizen Wearable - Tizen Wearable basic Application
+    </title>
 
-<title>Tizen Wearable Web IDE - Tizen Wearable - Tizen Wearable
-	basic Application</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style2.css" />
 
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" type="text/css" href="css/style2.css" />
+    <script src="js/draw.js"></script>
+    <script src="js/eventHandlers.js"></script>
+    <script src="js/main.js"></script>
+  </head>
 
+  <body>
+    <div id="menu">
+      <ul>
+        <li class="menuItem">
+          <a
+            onclick="setSelectionMethod('TAP')"
+            href="combinationLock.html"
+            id="tapItem"
+            >Combination - Tap</a
+          >
+        </li>
+        <li class="menuItem">
+          <a
+            onclick="setSelectionMethod('DIRECTION')"
+            href="combinationLock.html"
+            id="directionItem"
+            >Combination - Direction</a
+          >
+        </li>
 
-<script src="js/helper.js"></script>
-<script src="js/draw.js"></script>
-<script src="js/eventHandlers.js"></script>
-<script src="js/main.js"></script>
+        <li class="menuItem">
+          <a onclick="setTicks(10)" href="" id="ticks_10">10 Ticks</a>
+        </li>
 
-</head>
-
-<body>
-	<div id="menu">
-		<ul>
-			<li class="menuItem"><a onclick="setSelectionMethod('TAP')"
-				href="combinationLock.html" id="tapItem">Combination - Tap</a></li>
-			<li class="menuItem"><a
-				onclick="setSelectionMethod('DIRECTION')"
-				href="combinationLock.html" id="pauseItem">Combination - Pause</a></li>
-
-			<li class="menuItem"><a
-				onclick="setTicks(10)"
-				href="" id="ticks_10">10 Ticks</a></li>
-
-			<li class="menuItem"><a
-				onclick="setTicks(20)"
-				href="" id="ticks_20">20 Ticks</a></li>
-		</ul>
-
-
-	</div>
-
-</body>
-
+        <li class="menuItem">
+          <a onclick="setTicks(20)" href="" id="ticks_20">20 Ticks</a>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
