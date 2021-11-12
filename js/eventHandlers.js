@@ -1,5 +1,3 @@
-import { pointsToRotation, submitValue } from "./helper";
-
 let hasBeenTouched = false;
 let previousX = 0;
 let previousY = 0;
@@ -8,15 +6,13 @@ let centerTouched = false;
 
 let timeSinceRotation = 0;
 const d = new Date();
-
-const init_touch_handler = () => {
+function init_touch_handler() {
   let canvas = document.getElementById("canvas");
   canvas.addEventListener("touchmove", onMove, false);
   canvas.addEventListener("touchstart", onDown, false);
   canvas.addEventListener("touchend", onUp, false);
-};
-
-const onMove = (event) => {
+}
+function onMove(event) {
   event.preventDefault();
   if (!touchInRange(event)) {
     return;
@@ -33,16 +29,12 @@ const onMove = (event) => {
 
   let angleToRotate = pointsToRotation(previousX, previousY, newX, newY);
   if (Math.abs(angleToRotate) < Math.PI / (1.5 * getTicks())) {
-    update_canvas(getTicks());
     return;
   }
-
+  navigator.vibrate(20);
   rotation += angleToRotate;
 
-  navigator.vibrate(20);
-
   let newDirection;
-
   if (angleToRotate < 0) {
     newDirection = directions.CLOCKWISE;
   } else {
@@ -60,9 +52,8 @@ const onMove = (event) => {
   previousX = event.changedTouches[0].pageX;
   previousY = event.changedTouches[0].pageY;
   update_canvas(getTicks());
-};
-
-const onDown = (event) => {
+}
+function onDown(event) {
   event.preventDefault();
   hasBeenTouched = false;
 
@@ -70,9 +61,8 @@ const onDown = (event) => {
     centerTouched = true;
   }
   update_canvas(getTicks());
-};
-
-const onUp = (event) => {
+}
+function onUp(event) {
   event.preventDefault();
   if (!touchInRange(event) && getSelectionMethod() === selectionModes.TAP) {
     submitValue();
@@ -87,17 +77,15 @@ const onUp = (event) => {
 
   centerTouched = false;
   update_canvas(getTicks());
-};
-
-const touchInRange = (event) => {
+}
+function touchInRange(event) {
   const x = event.changedTouches[0].pageX - screen_radius;
   const y = event.changedTouches[0].pageY - screen_radius;
 
   update_canvas(getTicks());
   return Math.sqrt(x * x + y * y) > 80;
-};
-
-const onBezelRotate = (ev) => {
+}
+function onBezelRotate(ev) {
   let direction = ev.detail.direction;
   let new_direction;
 
@@ -118,4 +106,4 @@ const onBezelRotate = (ev) => {
   }
 
   update_canvas(getTicks());
-};
+}

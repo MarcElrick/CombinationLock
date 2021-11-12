@@ -2,40 +2,36 @@ let canvas;
 let context;
 let selectedVal = 0;
 
-const init_canvas = () => {
+function init_canvas() {
   canvas = document.getElementById("canvas");
   canvas.height = 360;
   canvas.width = 360;
   context = canvas.getContext("2d");
-};
+}
 
-const update_canvas = (numTicks) => {
+function update_canvas(numTicks) {
   context.clearRect(0, 0, canvas.width, canvas.height);
   drawTickCircles(numTicks);
   drawTickLabels(numTicks);
   drawPointer();
   drawHintDots();
+}
 
-  if (getEnteredPassword().length > 3) {
-    navToAuthIndicator();
-  }
-};
-
-const navToAuthIndicator = () => {
+function navToAuthIndicator() {
   const userPass = getUserPassword();
   const enteredPass = getEnteredPassword();
 
   if (
     userPass.length == enteredPass.length &&
-    userPass.every((value, index) => {
+    userPass.every(function (value, index) {
       return value === enteredPass[index];
     })
   )
     window.location.href = "authCorrect.html";
   else window.location.href = "authIncorrect.html";
-};
+}
 
-const drawTickCircles = (numTicks) => {
+function drawTickCircles(numTicks) {
   const dot_radius = (screen_radius * 15) / 20;
   let t;
   for (let i = 0; i < numTicks; i++) {
@@ -47,9 +43,9 @@ const drawTickCircles = (numTicks) => {
   }
 
   drawBarrierCircle();
-};
+}
 
-const drawTickLabels = (numTicks) => {
+function drawTickLabels(numTicks) {
   context.fillStyle = "white";
   context.font = "20px Arial";
   context.textAlign = "center";
@@ -67,9 +63,9 @@ const drawTickLabels = (numTicks) => {
   context.font = "50px Arial";
   selectedVal = rotationToValue(numTicks, rotation);
   context.fillText(selectedVal, screen_radius, screen_radius - 5);
-};
+}
 
-const drawHintDots = () => {
+function drawHintDots() {
   context.fillStyle = "white";
   context.font = "40px Arial";
 
@@ -86,9 +82,9 @@ const drawHintDots = () => {
     let x = screen_radius - 45 + i * 30;
     drawCircle(5, x, screen_radius + 25, context);
   }
-};
+}
 
-const drawBarrierCircle = () => {
+function drawBarrierCircle() {
   context.beginPath();
   context.arc(screen_radius, screen_radius, 80, 0, 2 * Math.PI, false);
 
@@ -106,16 +102,15 @@ const drawBarrierCircle = () => {
     false
   );
   context.stroke();
-};
+}
 
-const drawCircle = (radius, x, y) => {
+function drawCircle(radius, x, y) {
   context.beginPath();
   context.arc(x, y, radius, 0, 2 * Math.PI, false);
   context.fillStyle = "cyan";
   context.fill();
-};
-
-const drawPointer = () => {
+}
+function drawPointer() {
   context.fillStyle = "red";
   context.beginPath();
   context.moveTo(screen_radius, (screen_radius * 7) / 20);
@@ -124,4 +119,4 @@ const drawPointer = () => {
   context.lineTo(screen_radius, (screen_radius * 7) / 20);
 
   context.fill();
-};
+}

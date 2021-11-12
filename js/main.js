@@ -1,19 +1,19 @@
 let rotation = (3 / 2) * Math.PI;
 const screen_radius = 180;
 
-export const selectionModes = {
+const selectionModes = {
   TAP: "tap",
   DIRECTION: "direction",
 };
 
-export const directions = {
+const directions = {
   CLOCKWISE: "clockwise",
   ANTICLOCKWISE: "anticlockwise",
 };
 
 let global_direction = directions.CLOCKWISE;
 
-const init_combination_lock = () => {
+function init_combination_lock() {
   clearEnteredPassword();
   setUserPassword([1, 2, 3, 4]);
 
@@ -21,57 +21,57 @@ const init_combination_lock = () => {
   init_touch_handler();
   update_canvas(getTicks());
   document.addEventListener("rotarydetent", onBezelRotate);
-  document.addEventListener("tizenhwkey", (event) => {
+  document.addEventListener("tizenhwkey", function (event) {
     if (event.keyName === "back") document.location.href = "index.html";
   });
-};
+}
 
-const setSelectionMethod = (method) => {
+function setSelectionMethod(method) {
   localStorage.setItem("selectionMethod", selectionModes[method]);
-};
+}
 
-const getSelectionMethod = () => {
+function getSelectionMethod() {
   return localStorage.getItem("selectionMethod");
-};
+}
 
-const setTicks = (tickNum) => {
+function setTicks(tickNum) {
   return localStorage.setItem("globalTicks", tickNum);
-};
-const getTicks = () => {
+}
+function getTicks() {
   return localStorage.getItem("globalTicks");
-};
+}
 
-const getEnteredPassword = () => {
+function getEnteredPassword() {
   return localStorage
     .getItem("password")
     .split(" ")
-    .map((val) => {
+    .map(function (val) {
       return parseInt(val);
     })
-    .filter((val) => {
+    .filter(function (val) {
       return !isNaN(val);
     });
-};
+}
 
-const clearEnteredPassword = () => {
+function clearEnteredPassword() {
   localStorage.setItem("password", "");
-};
+}
 
-const addValueToPassword = (value) => {
+function addValueToPassword(value) {
   let password = getEnteredPassword();
   password.push(value);
   localStorage.setItem("password", password.join(" "));
-};
+}
 
-const setUserPassword = (passwordArray) => {
+function setUserPassword(passwordArray) {
   localStorage.setItem("userPassword", passwordArray.join(" "));
-};
+}
 
-const getUserPassword = () => {
+function getUserPassword() {
   return localStorage
     .getItem("userPassword")
     .split(" ")
-    .map((val) => {
+    .map(function (val) {
       return parseInt(val);
     });
-};
+}
