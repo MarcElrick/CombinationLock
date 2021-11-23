@@ -11,18 +11,17 @@ const directions = {
   ANTICLOCKWISE: "anticlockwise",
 };
 
-let global_direction = directions.CLOCKWISE;
-
 function init_combination_lock() {
   clearEnteredPassword();
+  localStorage.removeItem("globalDirection");
   setUserPassword([1, 2, 3, 4]);
-
   init_canvas();
   init_touch_handler();
   update_canvas(getTicks());
   document.addEventListener("rotarydetent", onBezelRotate);
   document.addEventListener("tizenhwkey", function (event) {
     if (event.keyName === "back") document.location.href = "index.html";
+    logAttempt("ABORTED");
   });
 }
 
@@ -74,4 +73,12 @@ function getUserPassword() {
     .map(function (val) {
       return parseInt(val);
     });
+}
+
+function setGlobalDirection(value) {
+  localStorage.setItem("globalDirection", value);
+}
+
+function getGlobalDirection() {
+  return localStorage.getItem("globalDirection");
 }

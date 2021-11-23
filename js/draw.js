@@ -26,9 +26,13 @@ function navToAuthIndicator() {
     userPass.every(function (value, index) {
       return value === enteredPass[index];
     })
-  )
+  ) {
+    logAttempt("SUCCESS");
     window.location.href = "authCorrect.html";
-  else window.location.href = "authIncorrect.html";
+  } else {
+    logAttempt("FAILURE");
+    window.location.href = "authIncorrect.html";
+  }
 }
 
 function drawTickCircles(numTicks) {

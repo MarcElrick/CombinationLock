@@ -1,6 +1,7 @@
 let hasBeenTouched = false;
 let previousX = 0;
 let previousY = 0;
+let firstTouch = false;
 
 let centerTouched = false;
 
@@ -12,12 +13,12 @@ function init_touch_handler() {
   canvas.addEventListener("touchstart", onDown, false);
   canvas.addEventListener("touchend", onUp, false);
 }
+
 function onMove(event) {
   event.preventDefault();
   if (!touchInRange(event)) {
     return;
   }
-
   const newX = event.changedTouches[0].pageX;
   const newY = event.changedTouches[0].pageY;
 
@@ -31,6 +32,8 @@ function onMove(event) {
   if (Math.abs(angleToRotate) < Math.PI / (1.5 * getTicks())) {
     return;
   }
+
+  let oldRotation = rotation;
   navigator.vibrate(20);
   rotation += angleToRotate;
 
@@ -41,12 +44,18 @@ function onMove(event) {
     newDirection = directions.ANTICLOCKWISE;
   }
 
+  let globalDirection = getGlobalDirection();
+  if (globalDirection === null) {
+    setGlobalDirection(newDirection);
+    return;
+  }
+
   if (
-    newDirection !== global_direction &&
+    newDirection !== globalDirection &&
     getSelectionMethod() === selectionModes.DIRECTION
   ) {
-    submitValue();
-    global_direction = newDirection;
+    submitValue(oldRotation);
+    setGlobalDirection(newDirection);
   }
 
   previousX = event.changedTouches[0].pageX;
@@ -56,6 +65,11 @@ function onMove(event) {
 function onDown(event) {
   event.preventDefault();
   hasBeenTouched = false;
+
+  if (!firstTouch) {
+    firstTouch = true;
+    startAttempt();
+  }
 
   if (!touchInRange(event)) {
     centerTouched = true;
@@ -87,22 +101,29 @@ function touchInRange(event) {
 }
 function onBezelRotate(ev) {
   let direction = ev.detail.direction;
-  let new_direction;
+  let newDirection;
+  let oldRotation = rotation;
 
   if (direction == "CW") {
-    new_direction = directions.CLOCKWISE;
+    newDirection = directions.CLOCKWISE;
     rotation -= Math.PI / getTicks();
   } else if (direction == "CCW") {
     rotation += Math.PI / getTicks();
-    new_direction = directions.ANTICLOCKWISE;
+    newDirection = directions.ANTICLOCKWISE;
+  }
+
+  let globalDirection = getGlobalDirection();
+  if (globalDirection === null) {
+    setGlobalDirection(newDirection);
+    return;
   }
 
   if (
-    new_direction !== global_direction &&
+    newDirection !== getGlobalDirection() &&
     getSelectionMethod() === selectionModes.DIRECTION
   ) {
-    submitValue();
-    global_direction = new_direction;
+    submitValue(oldRotation);
+    setGlobalDirection(newDirection);
   }
 
   update_canvas(getTicks());

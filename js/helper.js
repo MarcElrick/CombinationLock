@@ -21,11 +21,14 @@ function rotationToValue(numTicks, rotation) {
   return value;
 }
 
-function submitValue() {
-  addValueToPassword(rotationToValue(getTicks(), rotation));
+function submitValue(value) {
+  value
+    ? addValueToPassword(rotationToValue(getTicks(), value))
+    : addValueToPassword(rotationToValue(getTicks(), rotation));
+
   navigator.vibrate(75);
   if (getEnteredPassword().length > 3) {
     navToAuthIndicator();
   }
-  console.log(getEnteredPassword);
+  console.log(getEnteredPassword());
 }

@@ -18,3 +18,5 @@
 res/edje/*.edj
 
 *.wgt
+
+*node_modules

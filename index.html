@@ -12,10 +12,11 @@
     </title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/style2.css" />
 
     <script src="js/draw.js"></script>
+    <script src="js/helper.js"></script>
     <script src="js/eventHandlers.js"></script>
+    <script src="js/logController.js"></script>
     <script src="js/main.js"></script>
   </head>
 
@@ -44,7 +45,10 @@
         </li>
 
         <li class="menuItem">
-          <a onclick="setTicks(20)" href="" id="ticks_20">20 Ticks</a>
+          <a onclick="setTicks(15)" href="" id="ticks_15">15 Ticks</a>
+        </li>
+        <li class="menuItem">
+          <a onclick="endLogSession()" href="" id="endLogs">Save Logs</a>
         </li>
       </ul>
     </div>
