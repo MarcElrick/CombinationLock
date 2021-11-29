@@ -4,6 +4,7 @@ const screen_radius = 180;
 const selectionModes = {
   TAP: "tap",
   DIRECTION: "direction",
+  PIN: "PIN",
 };
 
 const directions = {
@@ -12,6 +13,7 @@ const directions = {
 };
 
 function init_combination_lock() {
+  localStorage.setItem("prevRoute", "combinationLock.html");
   clearEnteredPassword();
   localStorage.removeItem("globalDirection");
   setUserPassword([1, 2, 3, 4]);
@@ -60,6 +62,7 @@ function addValueToPassword(value) {
   let password = getEnteredPassword();
   password.push(value);
   localStorage.setItem("password", password.join(" "));
+  console.log(getEnteredPassword());
 }
 
 function setUserPassword(passwordArray) {

@@ -1,0 +1,42 @@
+html {
+  background-color: black;
+}
+
+[container] {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px; /* even spacing using grid-gap, You can use percentage values if you want*/
+  padding: 50px;
+  position: absolute;
+  left: 50%;
+  top: -15px;
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.item {
+  height: 60px;
+  width: 60px;
+  background: cyan;
+  border-radius: 60%;
+  align-content: center;
+  text-align: center;
+  line-height: 60px;
+  font-size: 40px;
+}
+.item a {
+  font-size: 40px;
+}
+
+.item :active {
+  background: red;
+}
+
+[zeroItem] {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
