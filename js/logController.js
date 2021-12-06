@@ -2,19 +2,29 @@ var startTime;
 
 function beginNewLogSession() {
   console.log("Start log session");
-  localStorage.setItem("currentStorageKey", new Date().toUTCString() + ".json");
+  localStorage.setItem("currentStorageKey", new Date().toISOString());
   startTime = null;
   localStorage.setItem("logData", JSON.stringify([]));
 }
 
 function endLogSession() {
   console.log("endLogSession");
+  
+  const key = localStorage.getItem("currentStorageKey");
+  const value =  localStorage.getItem("logData")
   localStorage.setItem(
-    localStorage.getItem("currentStorageKey"),
-    localStorage.getItem("logData")
+    key,
+    value
   );
 
-  console.info(localStorage.getItem("logData"));
+  console.info(value);
+  var client = new XMLHttpRequest();
+  
+  var params = {"data": {}}
+  params.data[key] = value
+  console.log(JSON.stringify(params))
+  client.open('GET', 'http://172.30.144.197:3000'+"?"+params);
+  client.send()
   beginNewLogSession();
 }
 
