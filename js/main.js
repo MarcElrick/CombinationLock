@@ -5,6 +5,7 @@ const selectionModes = {
   TAP: "tap",
   DIRECTION: "direction",
   PIN: "PIN",
+  PATTERN: "PATTERN",
 };
 
 const directions = {

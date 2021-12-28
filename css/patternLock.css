@@ -1,0 +1,27 @@
+.dot {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+}
+
+.contents {
+  display: block;
+  display: -webkit-flex;
+  height: 360px;
+  margin: 0;
+}
+
+#canvas {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  background-color: black;
+}
+
+body {
+  margin: 0px 0px;
+  background-color: black;
+}
