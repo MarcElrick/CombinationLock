@@ -9,22 +9,19 @@ function beginNewLogSession() {
 
 function endLogSession() {
   console.log("endLogSession");
-  
+
   const key = localStorage.getItem("currentStorageKey");
-  const value =  localStorage.getItem("logData")
-  localStorage.setItem(
-    key,
-    value
-  );
+  const value = localStorage.getItem("logData");
+  localStorage.setItem(key, value);
 
   console.info(value);
   var client = new XMLHttpRequest();
-  
-  var params = {"data": {}}
-  params.data[key] = value
-  console.log(JSON.stringify(params))
-  client.open('GET', 'http://172.30.144.197:3000'+"?"+params);
-  client.send()
+
+  var params = { data: {} };
+  params.data[key] = value;
+  console.log(JSON.stringify(params));
+  client.open("GET", "http://172.30.144.197:3000" + "?" + params);
+  client.send();
   beginNewLogSession();
 }
 

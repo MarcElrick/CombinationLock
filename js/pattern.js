@@ -22,9 +22,15 @@ var context;
 var currentX = null;
 var currentY = null;
 
+document.addEventListener("tizenhwkey", function (event) {
+  if (event.keyName === "back") document.location.href = "index.html";
+  logAttempt("ABORTED");
+});
+
 window.addEventListener(
   "touchstart",
   function (event) {
+    startAttempt();
     currentX = event.changedTouches[0].pageX;
     currentY = event.changedTouches[0].pageY;
     checkPosition();
@@ -46,10 +52,13 @@ window.addEventListener(
 window.addEventListener(
   "touchend",
   function () {
-    const pattern = localStorage.getItem("currentPattern");
-    if (pattern === JSON.stringify(dotvals)) {
+    const pattern = getUserPassword();
+    localStorage.setItem("password", dotvals.join(" "));
+    if (JSON.stringify(pattern) === JSON.stringify(dotvals)) {
+      logAttempt("SUCCESS");
       window.location.href = "authCorrect.html";
     } else {
+      logAttempt("FAILURE");
       window.location.href = "authIncorrect.html";
     }
   },
@@ -58,11 +67,9 @@ window.addEventListener(
 
 function init_pattern_lock() {
   localStorage.setItem("prevRoute", "patternLock.html");
+  setSelectionMethod(selectionModes.PATTERN);
+  setUserPassword([0, 1, 2, -1, -1, 3, -1, -1, -1]);
 
-  localStorage.setItem(
-    "currentPattern",
-    JSON.stringify([0, 1, 2, -1, -1, 3, -1, -1, -1])
-  );
   init_canvas();
   update_canvas();
 }
