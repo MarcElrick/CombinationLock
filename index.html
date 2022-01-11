@@ -67,7 +67,28 @@
         <li class="menuItem">
           <a onclick="endLogSession()" href="" id="endLogs">Save Logs</a>
         </li>
+
+        <li class="menuItem">
+          <a id="incrementParticipant"></a>
+        </li>
       </ul>
     </div>
   </body>
+  <script>
+    const incrementButton = document.getElementById("incrementParticipant");
+    incrementButton.text = localStorage.getItem("participantID") || 0;
+    incrementButton.onclick = function () {
+      const oldPass = localStorage.getItem("participantID");
+      if (oldPass === null) {
+        localStorage.setItem("participantID", 1);
+      } else {
+        localStorage.setItem(
+          "participantID",
+          oldPass === "9" ? "0" : parseInt(oldPass) + 1
+        );
+      }
+      console.log(localStorage.getItem("participantID"));
+      incrementButton.text = localStorage.getItem("participantID");
+    };
+  </script>
 </html>

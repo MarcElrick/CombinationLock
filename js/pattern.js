@@ -91,7 +91,7 @@ function checkPosition() {
     const x_diff = currentX - element[0];
     const y_diff = currentY - element[1];
 
-    if (Math.sqrt(x_diff ** 2 + y_diff ** 2) < 10) {
+    if (Math.sqrt(x_diff ** 2 + y_diff ** 2) < 20) {
       dotvals[index] = count;
       count++;
       pivotIndex = index;

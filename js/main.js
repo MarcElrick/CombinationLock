@@ -13,21 +13,6 @@ const directions = {
   ANTICLOCKWISE: "anticlockwise",
 };
 
-function init_combination_lock() {
-  localStorage.setItem("prevRoute", "combinationLock.html");
-  clearEnteredPassword();
-  localStorage.removeItem("globalDirection");
-  setUserPassword([1, 2, 3, 4]);
-  init_canvas();
-  init_touch_handler();
-  update_canvas(getTicks());
-  document.addEventListener("rotarydetent", onBezelRotate);
-  document.addEventListener("tizenhwkey", function (event) {
-    if (event.keyName === "back") document.location.href = "index.html";
-    logAttempt("ABORTED");
-  });
-}
-
 function setSelectionMethod(method) {
   localStorage.setItem("selectionMethod", selectionModes[method]);
 }
