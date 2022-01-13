@@ -16,25 +16,6 @@ function update_canvas(numTicks) {
   drawPointer();
   drawHintDots();
 }
-
-function navToAuthIndicator() {
-  const userPass = getUserPassword();
-  const enteredPass = getEnteredPassword();
-
-  if (
-    userPass.length == enteredPass.length &&
-    userPass.every(function (value, index) {
-      return value === enteredPass[index];
-    })
-  ) {
-    logAttempt("SUCCESS");
-    window.location.href = "authCorrect.html";
-  } else {
-    logAttempt("FAILURE");
-    window.location.href = "authIncorrect.html";
-  }
-}
-
 function drawTickCircles(numTicks) {
   const dot_radius = (screen_radius * 15) / 20;
   let t;

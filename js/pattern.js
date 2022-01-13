@@ -56,6 +56,7 @@ window.addEventListener(
     localStorage.setItem("password", dotvals.join(" "));
     if (JSON.stringify(pattern) === JSON.stringify(dotvals)) {
       logAttempt("SUCCESS");
+      nextPassword();
       window.location.href = "authCorrect.html";
     } else {
       logAttempt("FAILURE");
@@ -68,7 +69,7 @@ window.addEventListener(
 function init_pattern_lock() {
   localStorage.setItem("prevRoute", "patternLock.html");
   setSelectionMethod(selectionModes.PATTERN);
-  setUserPassword([0, 1, 2, -1, -1, 3, -1, -1, -1]);
+  loadPasswords(localStorage.getItem("participantID") || 0);
 
   init_canvas();
   update_canvas();
@@ -91,7 +92,7 @@ function checkPosition() {
     const x_diff = currentX - element[0];
     const y_diff = currentY - element[1];
 
-    if (Math.sqrt(x_diff ** 2 + y_diff ** 2) < 20) {
+    if (Math.sqrt(x_diff ** 2 + y_diff ** 2) < 40) {
       dotvals[index] = count;
       count++;
       pivotIndex = index;
@@ -126,7 +127,7 @@ function draw_current_line() {
 }
 
 function draw_path_lines() {
-  console.log(path);
+  // console.log(path);
   if (path.length === 0) return;
   context.strokeStyle = "white";
   context.lineWidth = 4;
@@ -134,7 +135,7 @@ function draw_path_lines() {
   context.moveTo(dotPositions[path[0]][0], dotPositions[path[0]][1]);
 
   path.forEach(function (value) {
-    console.log(value);
+    //console.log(value);
     context.lineTo(dotPositions[value][0], dotPositions[value][1]);
   });
   context.stroke();

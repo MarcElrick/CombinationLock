@@ -4,7 +4,7 @@ window.addEventListener("touchstart", onDown, false);
 
 function init_pin_lock() {
   localStorage.setItem("prevRoute", "pinLock.html");
-  setUserPassword([1, 2, 3, 4]);
+  loadPasswords(localStorage.getItem("participantID") || 0);
   clearEnteredPassword();
   setSelectionMethod(selectionModes.PIN);
   const items = document.getElementsByClassName("item");
@@ -40,6 +40,7 @@ function validatePassword() {
     })
   ) {
     logAttempt("SUCCESS");
+    nextPassword();
     window.location.href = "authCorrect.html";
   } else {
     logAttempt("FAILURE");
