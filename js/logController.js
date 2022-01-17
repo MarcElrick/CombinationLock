@@ -1,4 +1,6 @@
 var startTime;
+var webSocketURL = "ws://192.168.0.6:9000";
+var webSocket = new WebSocket(webSocketURL);
 
 function beginNewLogSession() {
   console.log("Start log session");
@@ -15,13 +17,12 @@ function endLogSession() {
   localStorage.setItem(key, value);
 
   console.info(value);
-  var client = new XMLHttpRequest();
 
   var params = { data: {} };
   params.data[key] = value;
   console.log(JSON.stringify(params));
-  client.open("GET", "http://172.30.144.197:3000" + "?" + params);
-  client.send();
+  webSocket.send(JSON.stringify(params));
+
   beginNewLogSession();
 }
 
