@@ -1,5 +1,5 @@
 var startTime;
-var webSocketURL = "ws://192.168.0.6:9000";
+var webSocketURL = "ws://arcane-peak-38157.herokuapp.com/";
 var webSocket = new WebSocket(webSocketURL);
 
 function beginNewLogSession() {

@@ -29,7 +29,7 @@ function onMove(event) {
   }
 
   let angleToRotate = pointsToRotation(previousX, previousY, newX, newY);
-  if (Math.abs(angleToRotate) < Math.PI / (1.5 * getTicks())) {
+  if (Math.abs(angleToRotate) < Math.PI / (3 * getTicks())) {
     return;
   }
 
