@@ -99,32 +99,3 @@ function touchInRange(event) {
   update_canvas(getTicks());
   return Math.sqrt(x * x + y * y) > 80;
 }
-function onBezelRotate(ev) {
-  let direction = ev.detail.direction;
-  let newDirection;
-  let oldRotation = rotation;
-
-  if (direction == "CW") {
-    newDirection = directions.CLOCKWISE;
-    rotation -= Math.PI / getTicks();
-  } else if (direction == "CCW") {
-    rotation += Math.PI / getTicks();
-    newDirection = directions.ANTICLOCKWISE;
-  }
-
-  let globalDirection = getGlobalDirection();
-  if (globalDirection === null) {
-    setGlobalDirection(newDirection);
-    return;
-  }
-
-  if (
-    newDirection !== getGlobalDirection() &&
-    getSelectionMethod() === selectionModes.DIRECTION
-  ) {
-    submitValue(oldRotation);
-    setGlobalDirection(newDirection);
-  }
-
-  update_canvas(getTicks());
-}
