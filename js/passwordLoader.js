@@ -21,7 +21,7 @@ function loadPasswords(participantNumber) {
       break;
     default:
       if (getTicks() === "10") currentPasswords = combination10Passwords;
-      else currentPasswords = combination15Passwords;
+      else currentPasswords = combination6Passwords;
       break;
   }
   setUserPassword(currentPasswords[participantNumber]);
@@ -76,7 +76,7 @@ const combination10Passwords = [
   [1, 2, 1, 2],
 ];
 
-const combination15Passwords = [
+const combination6Passwords = [
   [1, 2, 3, 4],
   [9, 3, 7, 5],
   [14, 9, 6, 3],
