@@ -20,8 +20,8 @@ function loadPasswords(participantNumber) {
       currentPasswords = pinPasswords;
       break;
     default:
-      if (getTicks() === "10") currentPasswords = combination10Passwords;
-      else currentPasswords = combination6Passwords;
+      if (getTicks() === "6") currentPasswords = combination6Passwords;
+      else currentPasswords = combination10Passwords;
       break;
   }
   setUserPassword(currentPasswords[participantNumber]);
@@ -30,7 +30,7 @@ function loadPasswords(participantNumber) {
 function nextPassword() {
   var index = getPasswordsIndex();
   if (index === NaN) index = 0;
-  if (index === 9) {
+  if (index === 5) {
     setPasswordIndex(0);
   } else {
     setPasswordIndex(index + 1);
@@ -52,7 +52,6 @@ const patternPasswords = [
   [-1, 2, 3, -1, 1, 4, 0, -1, -1],
   [-1, 3, 2, -1, 0, 1, -1, -1, 4],
   [-1, 2, -1, 3, 0, 1, -1, 4, -1],
-  [-1, 2, 3, 1, -1, 4, -1, 0, -1],
   [0, -1, -1, 3, 1, 4, 2, -1, -1],
 ];
 
