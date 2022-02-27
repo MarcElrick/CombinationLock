@@ -18,20 +18,20 @@ Please inform the experimenter when you are ready to proceeed.
 
 ### Usability Evaluation
 
-For each of the 5 passwords on your list, do the following:
+For each of the 6 passwords on your list, do the following:
 
 - Enter the password.
-  
+
   - If you entered the password correctly, you may advance to repeat this step for all other passwords.
-  
+
   - If you entered the password incorrectly, repeat until you have entered it correctly.
 
 You will advance through the list 3 times until you have correctly entered a total of 30 passwords.
 
 ### User Survey
 
-You will then be presented with a survey to fill out. This will be mostly Likert-scale style questions on how much you agree or disagree with certain statements related to your experience with the authentication method.
+You will then be presented with a survey to fill out. This will be questions on how much you agree or disagree with certain statements related to your experience with the authentication method.
 
 ### Video Attack
 
-Finally, you will be shown several videos of someone unlocking a device using the method with which you have been familliarised. You will see each video once, and your goal will be to try to figure out the person's password from what you have seen.
+Finally, you will be shown several a video of someone unlocking a device using the method with which you have been familliarised. You will see each video once, and your goal will be to try to figure out the person's password from what you have seen.
