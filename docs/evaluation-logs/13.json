@@ -1,0 +1,1590 @@
+{
+  "data": {
+    "2022-03-29T10:15:48.053Z": [
+      {
+        "userPassword": [0, 4, 2, 3],
+        "enteredPassword": [0, 4, 2, 4],
+        "startTime": 1648548951719,
+        "endTime": 1648548973065,
+        "elapsedTimeInMilliseconds": 21346,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [0, 4, 2, 3],
+        "enteredPassword": [0, 4, 2, 3],
+        "startTime": 1648548977612,
+        "endTime": 1648548990071,
+        "elapsedTimeInMilliseconds": 12459,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 5, 4, 1],
+        "enteredPassword": [1, 5, 4, 1],
+        "startTime": 1648548995627,
+        "endTime": 1648549010438,
+        "elapsedTimeInMilliseconds": 14811,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [5, 3, 2, 5],
+        "enteredPassword": [5, 3, 2, 5],
+        "startTime": 1648549013987,
+        "endTime": 1648549027221,
+        "elapsedTimeInMilliseconds": 13234,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [4, 3, 4, 5],
+        "enteredPassword": [4, 3, 5, 5],
+        "startTime": 1648549029984,
+        "endTime": 1648549038413,
+        "elapsedTimeInMilliseconds": 8429,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [4, 3, 4, 5],
+        "enteredPassword": [4, 3, 4, 5],
+        "startTime": 1648549040858,
+        "endTime": 1648549053504,
+        "elapsedTimeInMilliseconds": 12646,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 5, 2, 5],
+        "enteredPassword": [0, 5, 2, 5],
+        "startTime": 1648549056876,
+        "endTime": 1648549070591,
+        "elapsedTimeInMilliseconds": 13715,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 2, 3, 4],
+        "enteredPassword": [2, 3, 1, 3],
+        "startTime": 1648549074024,
+        "endTime": 1648549081366,
+        "elapsedTimeInMilliseconds": 7342,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [0, 2, 3, 4],
+        "enteredPassword": [0, 2, 3, 4],
+        "startTime": 1648549084857,
+        "endTime": 1648549096836,
+        "elapsedTimeInMilliseconds": 11979,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 4, 2, 3],
+        "enteredPassword": [0, 4, 2, 3],
+        "startTime": 1648549102676,
+        "endTime": 1648549113751,
+        "elapsedTimeInMilliseconds": 11075,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 5, 4, 1],
+        "enteredPassword": [1, 5, 5, 4],
+        "startTime": 1648549116724,
+        "endTime": 1648549124790,
+        "elapsedTimeInMilliseconds": 8066,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [1, 5, 4, 1],
+        "enteredPassword": [1, 5, 4, 1],
+        "startTime": 1648549128520,
+        "endTime": 1648549141654,
+        "elapsedTimeInMilliseconds": 13134,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [5, 3, 2, 5],
+        "enteredPassword": [5, 0, 0, 2],
+        "startTime": 1648549145055,
+        "endTime": 1648549152276,
+        "elapsedTimeInMilliseconds": 7221,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [5, 3, 2, 5],
+        "enteredPassword": [5, 3, 2, 3],
+        "startTime": 1648549155241,
+        "endTime": 1648549164533,
+        "elapsedTimeInMilliseconds": 9292,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [5, 3, 2, 5],
+        "enteredPassword": [5, 3, 2, 3],
+        "startTime": 1648549167418,
+        "endTime": 1648549175487,
+        "elapsedTimeInMilliseconds": 8069,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [5, 3, 2, 5],
+        "enteredPassword": [5, 3, 2, 5],
+        "startTime": 1648549179387,
+        "endTime": 1648549194261,
+        "elapsedTimeInMilliseconds": 14874,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [4, 3, 4, 5],
+        "enteredPassword": [4, 3, 4, 0],
+        "startTime": 1648549200385,
+        "endTime": 1648549211919,
+        "elapsedTimeInMilliseconds": 11534,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [4, 3, 4, 5],
+        "enteredPassword": [4, 3, 4, 5],
+        "startTime": 1648549214726,
+        "endTime": 1648549233029,
+        "elapsedTimeInMilliseconds": 18303,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 5, 2, 5],
+        "enteredPassword": [5, 0, 4, 0],
+        "startTime": 1648549237092,
+        "endTime": 1648549241608,
+        "elapsedTimeInMilliseconds": 4516,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [0, 5, 2, 5],
+        "enteredPassword": [0, 0, 2, 5],
+        "startTime": 1648549244812,
+        "endTime": 1648549259479,
+        "elapsedTimeInMilliseconds": 14667,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [0, 5, 2, 5],
+        "enteredPassword": [0, 0, 2, 5],
+        "startTime": 1648549262089,
+        "endTime": 1648549278189,
+        "elapsedTimeInMilliseconds": 16100,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [0, 5, 2, 5],
+        "enteredPassword": [1, 1, 1, 0],
+        "startTime": 1648549283357,
+        "endTime": 1648549287811,
+        "elapsedTimeInMilliseconds": 4454,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [0, 5, 2, 5],
+        "enteredPassword": [0, 0, 3, 4],
+        "startTime": 1648549290379,
+        "endTime": 1648549296821,
+        "elapsedTimeInMilliseconds": 6442,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [0, 5, 2, 5],
+        "enteredPassword": [0, 5, 2, 5],
+        "startTime": 1648549301105,
+        "endTime": 1648549321989,
+        "elapsedTimeInMilliseconds": 20884,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 2, 3, 4],
+        "enteredPassword": [0, 2, 5, 0],
+        "startTime": 1648549328880,
+        "endTime": 1648549335276,
+        "elapsedTimeInMilliseconds": 6396,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [0, 2, 3, 4],
+        "enteredPassword": [0, 2, 3, 4],
+        "startTime": 1648549343477,
+        "endTime": 1648549354110,
+        "elapsedTimeInMilliseconds": 10633,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 4, 2, 3],
+        "enteredPassword": [0, 4, 2, 3],
+        "startTime": 1648549359936,
+        "endTime": 1648549369567,
+        "elapsedTimeInMilliseconds": 9631,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 5, 4, 1],
+        "enteredPassword": [0, 1, 0, 0],
+        "startTime": 1648549371580,
+        "endTime": 1648549376501,
+        "elapsedTimeInMilliseconds": 4921,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [1, 5, 4, 1],
+        "enteredPassword": [1, 5, 4, 1],
+        "startTime": 1648549379241,
+        "endTime": 1648549391330,
+        "elapsedTimeInMilliseconds": 12089,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [5, 3, 2, 5],
+        "enteredPassword": [5, 3, 2, 5],
+        "startTime": 1648549395119,
+        "endTime": 1648549403389,
+        "elapsedTimeInMilliseconds": 8270,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [4, 3, 4, 5],
+        "enteredPassword": [4, 2, 1, 3],
+        "startTime": 1648549407983,
+        "endTime": 1648549418043,
+        "elapsedTimeInMilliseconds": 10060,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [4, 3, 4, 5],
+        "enteredPassword": [4, 5, 3, 4],
+        "startTime": 1648549421556,
+        "endTime": 1648549427582,
+        "elapsedTimeInMilliseconds": 6026,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [4, 3, 4, 5],
+        "enteredPassword": [4, 3, 4, 0],
+        "startTime": 1648549430638,
+        "endTime": 1648549449259,
+        "elapsedTimeInMilliseconds": 18621,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [4, 3, 4, 5],
+        "enteredPassword": [4, 3, 4, 5],
+        "startTime": 1648549454734,
+        "endTime": 1648549465372,
+        "elapsedTimeInMilliseconds": 10638,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 5, 2, 5],
+        "enteredPassword": [0, 5, 2, 5],
+        "startTime": 1648549468986,
+        "endTime": 1648549479920,
+        "elapsedTimeInMilliseconds": 10934,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 2, 3, 4],
+        "enteredPassword": [1, 1, 2, 1],
+        "startTime": 1648549485193,
+        "endTime": 1648549489054,
+        "elapsedTimeInMilliseconds": 3861,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [0, 2, 3, 4],
+        "enteredPassword": [0, 2, 3, 4],
+        "startTime": 1648549494816,
+        "endTime": 1648549504737,
+        "elapsedTimeInMilliseconds": 9921,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 4, 2, 3],
+        "enteredPassword": [],
+        "endTime": 1648549508395,
+        "elapsedTimeInMilliseconds": null,
+        "method": "direction",
+        "numTicks": "6",
+        "endState": "ABORTED"
+      }
+    ],
+    "2022-03-29T10:29:02.097Z": [
+      {
+        "userPassword": [0, 1, -1, -1, 2, 3, -1, -1, 4],
+        "enteredPassword": [0, 1, -1, -1, 2, -1, -1, -1, 3],
+        "startTime": 1648549773675,
+        "endTime": 1648549774341,
+        "elapsedTimeInMilliseconds": 666,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [0, 1, -1, -1, 2, 3, -1, -1, 4],
+        "enteredPassword": [0, 1, -1, -1, 2, 3, -1, -1, 4],
+        "startTime": 1648549778887,
+        "endTime": 1648549780053,
+        "elapsedTimeInMilliseconds": 1166,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [-1, 2, 3, -1, 1, 4, 0, -1, -1],
+        "enteredPassword": [-1, 2, 1, -1, 3, 0, 4, -1, -1],
+        "startTime": 1648549784551,
+        "endTime": 1648549785855,
+        "elapsedTimeInMilliseconds": 1304,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [-1, 2, 3, -1, 1, 4, 0, -1, -1],
+        "enteredPassword": [-1, 2, 3, -1, 1, 4, 0, -1, -1],
+        "startTime": 1648549790402,
+        "endTime": 1648549792214,
+        "elapsedTimeInMilliseconds": 1812,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [-1, 3, 2, -1, 0, 1, -1, -1, 4],
+        "enteredPassword": [-1, 3, 2, -1, 0, 1, -1, -1, -1],
+        "startTime": 1648549796178,
+        "endTime": 1648549797613,
+        "elapsedTimeInMilliseconds": 1435,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [-1, 3, 2, -1, 0, 1, -1, -1, 4],
+        "enteredPassword": [-1, 3, 2, -1, 0, 1, -1, -1, 4],
+        "startTime": 1648549801520,
+        "endTime": 1648549804689,
+        "elapsedTimeInMilliseconds": 3169,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [-1, 2, -1, 3, 0, 1, -1, 4, -1],
+        "enteredPassword": [-1, -1, -1, -1, -1, -1, -1, -1, -1],
+        "startTime": 1648549807943,
+        "endTime": 1648549807961,
+        "elapsedTimeInMilliseconds": 18,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [-1, 2, -1, 3, 0, 1, -1, 4, -1],
+        "enteredPassword": [-1, 2, -1, 3, 0, 1, -1, 4, -1],
+        "startTime": 1648549813698,
+        "endTime": 1648549816130,
+        "elapsedTimeInMilliseconds": 2432,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, -1, -1, 3, 1, 4, 2, -1, -1],
+        "enteredPassword": [0, -1, -1, 3, 1, 4, 2, -1, -1],
+        "startTime": 1648549819450,
+        "endTime": 1648549823880,
+        "elapsedTimeInMilliseconds": 4430,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 1, 2, 3, 4, -1, -1, -1, -1],
+        "enteredPassword": [0, 1, 2, 4, 3, -1, -1, -1, -1],
+        "startTime": 1648549828196,
+        "endTime": 1648549830144,
+        "elapsedTimeInMilliseconds": 1948,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [0, 1, 2, 3, 4, -1, -1, -1, -1],
+        "enteredPassword": [0, 1, 2, 3, 4, -1, -1, -1, -1],
+        "startTime": 1648549832042,
+        "endTime": 1648549834038,
+        "elapsedTimeInMilliseconds": 1996,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 1, -1, -1, 2, 3, -1, -1, 4],
+        "enteredPassword": [0, 1, -1, -1, 2, 3, -1, -1, 4],
+        "startTime": 1648549840515,
+        "endTime": 1648549841484,
+        "elapsedTimeInMilliseconds": 969,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [-1, 2, 3, -1, 1, 4, 0, -1, -1],
+        "enteredPassword": [-1, 2, 3, -1, 1, 4, 0, -1, -1],
+        "startTime": 1648549844030,
+        "endTime": 1648549845706,
+        "elapsedTimeInMilliseconds": 1676,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [-1, 3, 2, -1, 0, 1, -1, -1, 4],
+        "enteredPassword": [-1, 3, 2, -1, 0, 1, -1, -1, 4],
+        "startTime": 1648549848133,
+        "endTime": 1648549849360,
+        "elapsedTimeInMilliseconds": 1227,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [-1, 2, -1, 3, 0, 1, -1, 4, -1],
+        "enteredPassword": [-1, 2, -1, 3, 0, 1, -1, 4, -1],
+        "startTime": 1648549853795,
+        "endTime": 1648549855825,
+        "elapsedTimeInMilliseconds": 2030,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, -1, -1, 3, 1, 4, 2, -1, -1],
+        "enteredPassword": [0, -1, -1, 3, 1, 4, 2, -1, -1],
+        "startTime": 1648549859384,
+        "endTime": 1648549860779,
+        "elapsedTimeInMilliseconds": 1395,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 1, 2, 3, 4, -1, -1, -1, -1],
+        "enteredPassword": [0, 1, 2, 3, 4, 5, -1, -1, -1],
+        "startTime": 1648549863307,
+        "endTime": 1648549864272,
+        "elapsedTimeInMilliseconds": 965,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [0, 1, 2, 3, 4, -1, -1, -1, -1],
+        "enteredPassword": [0, 1, 2, 3, 4, -1, -1, -1, -1],
+        "startTime": 1648549866726,
+        "endTime": 1648549867558,
+        "elapsedTimeInMilliseconds": 832,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 1, -1, -1, 2, 3, -1, -1, 4],
+        "enteredPassword": [0, 1, -1, -1, 2, 3, -1, -1, 4],
+        "startTime": 1648549872358,
+        "endTime": 1648549873021,
+        "elapsedTimeInMilliseconds": 663,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [-1, 2, 3, -1, 1, 4, 0, -1, -1],
+        "enteredPassword": [-1, 2, 3, -1, 1, -1, 0, -1, -1],
+        "startTime": 1648549878250,
+        "endTime": 1648549878917,
+        "elapsedTimeInMilliseconds": 667,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [-1, 2, 3, -1, 1, 4, 0, -1, -1],
+        "enteredPassword": [-1, 2, 3, -1, 1, 4, 0, -1, -1],
+        "startTime": 1648549883043,
+        "endTime": 1648549883953,
+        "elapsedTimeInMilliseconds": 910,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [-1, 3, 2, -1, 0, 1, -1, -1, 4],
+        "enteredPassword": [-1, 3, 2, -1, 0, 1, -1, -1, 4],
+        "startTime": 1648549887648,
+        "endTime": 1648549888522,
+        "elapsedTimeInMilliseconds": 874,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [-1, 2, -1, 3, 0, 1, -1, 4, -1],
+        "enteredPassword": [-1, 2, -1, 3, 0, 1, -1, 4, -1],
+        "startTime": 1648549890743,
+        "endTime": 1648549892140,
+        "elapsedTimeInMilliseconds": 1397,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, -1, -1, 3, 1, 4, 2, -1, -1],
+        "enteredPassword": [0, -1, -1, 3, 1, 4, 2, -1, -1],
+        "startTime": 1648549896333,
+        "endTime": 1648549897718,
+        "elapsedTimeInMilliseconds": 1385,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 1, 2, 3, 4, -1, -1, -1, -1],
+        "enteredPassword": [0, 1, 2, 3, 4, -1, -1, -1, -1],
+        "startTime": 1648549901211,
+        "endTime": 1648549901980,
+        "elapsedTimeInMilliseconds": 769,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 1, -1, -1, 2, 3, -1, -1, 4],
+        "enteredPassword": [0, 1, 2, 3, 4, -1, -1, -1, -1],
+        "endTime": 1648549907647,
+        "elapsedTimeInMilliseconds": null,
+        "method": "PATTERN",
+        "numTicks": "6",
+        "endState": "ABORTED"
+      }
+    ],
+    "2022-03-29T10:36:48.852Z": [
+      {
+        "userPassword": [6, 2, 5, 3],
+        "enteredPassword": [6, 2, 5, 3],
+        "startTime": 1648550231214,
+        "endTime": 1648550246804,
+        "elapsedTimeInMilliseconds": 15590,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [9, 6, 4, 2],
+        "enteredPassword": [9, 6, 4, 3],
+        "startTime": 1648550251556,
+        "endTime": 1648550260266,
+        "elapsedTimeInMilliseconds": 8710,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [9, 6, 4, 2],
+        "enteredPassword": [9, 6, 4, 2],
+        "startTime": 1648550263092,
+        "endTime": 1648550277632,
+        "elapsedTimeInMilliseconds": 14540,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [5, 2, 4, 3],
+        "enteredPassword": [5, 2, 2, 2],
+        "startTime": 1648550283370,
+        "endTime": 1648550291167,
+        "elapsedTimeInMilliseconds": 7797,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [5, 2, 4, 3],
+        "enteredPassword": [5, 2, 4, 3],
+        "startTime": 1648550297583,
+        "endTime": 1648550317236,
+        "elapsedTimeInMilliseconds": 19653,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 2, 0, 3],
+        "enteredPassword": [1, 2, 0, 3],
+        "startTime": 1648550321006,
+        "endTime": 1648550336338,
+        "elapsedTimeInMilliseconds": 15332,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 3, 1, 4],
+        "enteredPassword": [0, 3, 1, 4],
+        "startTime": 1648550340574,
+        "endTime": 1648550352288,
+        "elapsedTimeInMilliseconds": 11714,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 2, 3, 4],
+        "enteredPassword": [1, 2, 3, 4],
+        "startTime": 1648550354791,
+        "endTime": 1648550364520,
+        "elapsedTimeInMilliseconds": 9729,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [6, 2, 5, 3],
+        "enteredPassword": [6, 2, 5, 3],
+        "startTime": 1648550369010,
+        "endTime": 1648550386213,
+        "elapsedTimeInMilliseconds": 17203,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [9, 6, 4, 2],
+        "enteredPassword": [9, 6, 4, 2],
+        "startTime": 1648550392149,
+        "endTime": 1648550403846,
+        "elapsedTimeInMilliseconds": 11697,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [5, 2, 4, 3],
+        "enteredPassword": [5, 2, 4, 3],
+        "startTime": 1648550407303,
+        "endTime": 1648550423559,
+        "elapsedTimeInMilliseconds": 16256,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 2, 0, 3],
+        "enteredPassword": [1, 2, 0, 3],
+        "startTime": 1648550430947,
+        "endTime": 1648550441908,
+        "elapsedTimeInMilliseconds": 10961,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 3, 1, 4],
+        "enteredPassword": [0, 3, 1, 4],
+        "startTime": 1648550445845,
+        "endTime": 1648550458430,
+        "elapsedTimeInMilliseconds": 12585,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 2, 3, 4],
+        "enteredPassword": [1, 2, 3, 4],
+        "startTime": 1648550465735,
+        "endTime": 1648550473889,
+        "elapsedTimeInMilliseconds": 8154,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [6, 2, 5, 3],
+        "enteredPassword": [6, 2, 5, 3],
+        "startTime": 1648550478400,
+        "endTime": 1648550492363,
+        "elapsedTimeInMilliseconds": 13963,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [9, 6, 4, 2],
+        "enteredPassword": [9, 6, 4, 2],
+        "startTime": 1648550498485,
+        "endTime": 1648550505764,
+        "elapsedTimeInMilliseconds": 7279,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [5, 2, 4, 3],
+        "enteredPassword": [0, 0, 0, 0],
+        "startTime": 1648550510718,
+        "endTime": 1648550511947,
+        "elapsedTimeInMilliseconds": 1229,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [5, 2, 4, 3],
+        "enteredPassword": [0, 0, 0, 0],
+        "startTime": 1648550513538,
+        "endTime": 1648550514594,
+        "elapsedTimeInMilliseconds": 1056,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [5, 2, 4, 3],
+        "enteredPassword": [5, 2, 4, 3],
+        "startTime": 1648550522949,
+        "endTime": 1648550537656,
+        "elapsedTimeInMilliseconds": 14707,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 2, 0, 3],
+        "enteredPassword": [1, 2, 0, 3],
+        "startTime": 1648550541930,
+        "endTime": 1648550547500,
+        "elapsedTimeInMilliseconds": 5570,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 3, 1, 4],
+        "enteredPassword": [0, 4, 4, 4],
+        "startTime": 1648550551622,
+        "endTime": 1648550556507,
+        "elapsedTimeInMilliseconds": 4885,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [0, 3, 1, 4],
+        "enteredPassword": [0, 3, 1, 4],
+        "startTime": 1648550563766,
+        "endTime": 1648550571967,
+        "elapsedTimeInMilliseconds": 8201,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 2, 3, 4],
+        "enteredPassword": [1, 2, 3, 4],
+        "startTime": 1648550575123,
+        "endTime": 1648550580907,
+        "elapsedTimeInMilliseconds": 5784,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [6, 2, 5, 3],
+        "enteredPassword": [],
+        "endTime": 1648550587341,
+        "elapsedTimeInMilliseconds": null,
+        "method": "tap",
+        "numTicks": "10",
+        "endState": "ABORTED"
+      }
+    ],
+    "2022-03-29T10:45:17.562Z": [
+      {
+        "userPassword": [6, 2, 5, 3],
+        "enteredPassword": [9, 0, 7, 9],
+        "startTime": 1648550732510,
+        "endTime": 1648550736901,
+        "elapsedTimeInMilliseconds": 4391,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [6, 2, 5, 3],
+        "enteredPassword": [6, 2, 5, 3],
+        "startTime": 1648550742370,
+        "endTime": 1648550760402,
+        "elapsedTimeInMilliseconds": 18032,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [9, 6, 4, 2],
+        "enteredPassword": [9, 6, 4, 2],
+        "startTime": 1648550766018,
+        "endTime": 1648550784376,
+        "elapsedTimeInMilliseconds": 18358,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [5, 2, 4, 3],
+        "enteredPassword": [5, 2, 4, 3],
+        "startTime": 1648550787525,
+        "endTime": 1648550804536,
+        "elapsedTimeInMilliseconds": 17011,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 2, 0, 3],
+        "enteredPassword": [1, 2, 0, 3],
+        "startTime": 1648550807699,
+        "endTime": 1648550819559,
+        "elapsedTimeInMilliseconds": 11860,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 3, 1, 4],
+        "enteredPassword": [0, 3, 1, 4],
+        "startTime": 1648550822871,
+        "endTime": 1648550838592,
+        "elapsedTimeInMilliseconds": 15721,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 2, 3, 4],
+        "enteredPassword": [1, 2, 3, 1],
+        "startTime": 1648550841532,
+        "endTime": 1648550847590,
+        "elapsedTimeInMilliseconds": 6058,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [1, 2, 3, 4],
+        "enteredPassword": [1, 2, 3, 4],
+        "startTime": 1648550853235,
+        "endTime": 1648550865629,
+        "elapsedTimeInMilliseconds": 12394,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [6, 2, 5, 3],
+        "enteredPassword": [6, 2, 5, 4],
+        "startTime": 1648550870748,
+        "endTime": 1648550885232,
+        "elapsedTimeInMilliseconds": 14484,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [6, 2, 5, 3],
+        "enteredPassword": [6, 2, 5, 3],
+        "startTime": 1648550889091,
+        "endTime": 1648550909629,
+        "elapsedTimeInMilliseconds": 20538,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [9, 6, 4, 2],
+        "enteredPassword": [9, 6, 4, 2],
+        "startTime": 1648550915819,
+        "endTime": 1648550926945,
+        "elapsedTimeInMilliseconds": 11126,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [5, 2, 4, 3],
+        "enteredPassword": [5, 2, 4, 3],
+        "startTime": 1648550930174,
+        "endTime": 1648550945343,
+        "elapsedTimeInMilliseconds": 15169,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 2, 0, 3],
+        "enteredPassword": [1, 2, 0, 3],
+        "startTime": 1648550948420,
+        "endTime": 1648550959631,
+        "elapsedTimeInMilliseconds": 11211,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 3, 1, 4],
+        "enteredPassword": [0, 0, 9, 3],
+        "startTime": 1648550962800,
+        "endTime": 1648550971139,
+        "elapsedTimeInMilliseconds": 8339,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [0, 3, 1, 4],
+        "enteredPassword": [0, 4, 1, 4],
+        "startTime": 1648550976365,
+        "endTime": 1648550991709,
+        "elapsedTimeInMilliseconds": 15344,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [0, 3, 1, 4],
+        "enteredPassword": [0, 3, 0, 1],
+        "startTime": 1648550998039,
+        "endTime": 1648551008155,
+        "elapsedTimeInMilliseconds": 10116,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [0, 3, 1, 4],
+        "enteredPassword": [0, 2, 0, 1],
+        "startTime": 1648551011968,
+        "endTime": 1648551021501,
+        "elapsedTimeInMilliseconds": 9533,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [0, 3, 1, 4],
+        "enteredPassword": [0, 3, 1, 4],
+        "startTime": 1648551024395,
+        "endTime": 1648551039448,
+        "elapsedTimeInMilliseconds": 15053,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 2, 3, 4],
+        "enteredPassword": [1, 2, 3, 3],
+        "startTime": 1648551043122,
+        "endTime": 1648551052433,
+        "elapsedTimeInMilliseconds": 9311,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [1, 2, 3, 4],
+        "enteredPassword": [1, 2, 3, 4],
+        "startTime": 1648551058197,
+        "endTime": 1648551069915,
+        "elapsedTimeInMilliseconds": 11718,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [6, 2, 5, 3],
+        "enteredPassword": [6, 2, 5, 3],
+        "startTime": 1648551076363,
+        "endTime": 1648551089099,
+        "elapsedTimeInMilliseconds": 12736,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [9, 6, 4, 2],
+        "enteredPassword": [9, 6, 4, 2],
+        "startTime": 1648551093009,
+        "endTime": 1648551104046,
+        "elapsedTimeInMilliseconds": 11037,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [5, 2, 4, 3],
+        "enteredPassword": [5, 0, 9, 2],
+        "startTime": 1648551110317,
+        "endTime": 1648551116938,
+        "elapsedTimeInMilliseconds": 6621,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [5, 2, 4, 3],
+        "enteredPassword": [5, 3, 1, 2],
+        "startTime": 1648551124307,
+        "endTime": 1648551131204,
+        "elapsedTimeInMilliseconds": 6897,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [5, 2, 4, 3],
+        "enteredPassword": [5, 2, 4, 3],
+        "startTime": 1648551134688,
+        "endTime": 1648551152888,
+        "elapsedTimeInMilliseconds": 18200,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 2, 0, 3],
+        "enteredPassword": [1, 2, 0, 3],
+        "startTime": 1648551159167,
+        "endTime": 1648551170580,
+        "elapsedTimeInMilliseconds": 11413,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 3, 1, 4],
+        "enteredPassword": [0, 3, 1, 4],
+        "startTime": 1648551174130,
+        "endTime": 1648551187765,
+        "elapsedTimeInMilliseconds": 13635,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 2, 3, 4],
+        "enteredPassword": [1, 2, 2, 0],
+        "startTime": 1648551190617,
+        "endTime": 1648551201590,
+        "elapsedTimeInMilliseconds": 10973,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [1, 2, 3, 4],
+        "enteredPassword": [1, 2, 3, 4],
+        "startTime": 1648551204219,
+        "endTime": 1648551217561,
+        "elapsedTimeInMilliseconds": 13342,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [6, 2, 5, 3],
+        "enteredPassword": [],
+        "endTime": 1648551225154,
+        "elapsedTimeInMilliseconds": null,
+        "method": "direction",
+        "numTicks": "10",
+        "endState": "ABORTED"
+      }
+    ],
+    "2022-03-29T10:56:31.226Z": [
+      {
+        "userPassword": [6, 2, 5, 3],
+        "enteredPassword": [6, 2, 5, 3],
+        "startTime": 1648551401006,
+        "endTime": 1648551402954,
+        "elapsedTimeInMilliseconds": 1948,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [9, 6, 4, 2],
+        "enteredPassword": [9, 6, 4, 2],
+        "startTime": 1648551409413,
+        "endTime": 1648551410870,
+        "elapsedTimeInMilliseconds": 1457,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [5, 2, 4, 3],
+        "enteredPassword": [5, 2, 4, 3],
+        "startTime": 1648551415620,
+        "endTime": 1648551417607,
+        "elapsedTimeInMilliseconds": 1987,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 2, 0, 3],
+        "enteredPassword": [1, 2, 0, 3],
+        "startTime": 1648551420422,
+        "endTime": 1648551422171,
+        "elapsedTimeInMilliseconds": 1749,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 3, 1, 4],
+        "enteredPassword": [0, 3, 1, 4],
+        "startTime": 1648551424840,
+        "endTime": 1648551426986,
+        "elapsedTimeInMilliseconds": 2146,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 2, 3, 4],
+        "enteredPassword": [1, 2, 3, 4],
+        "startTime": 1648551429629,
+        "endTime": 1648551430769,
+        "elapsedTimeInMilliseconds": 1140,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [6, 2, 5, 3],
+        "enteredPassword": [6, 2, 5, 3],
+        "startTime": 1648551436844,
+        "endTime": 1648551439505,
+        "elapsedTimeInMilliseconds": 2661,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [9, 6, 4, 2],
+        "enteredPassword": [9, 9, 6, 4],
+        "startTime": 1648551443544,
+        "endTime": 1648551452007,
+        "elapsedTimeInMilliseconds": 8463,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [9, 6, 4, 2],
+        "enteredPassword": [9, 6, 4, 2],
+        "startTime": 1648551454906,
+        "endTime": 1648551458883,
+        "elapsedTimeInMilliseconds": 3977,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [5, 2, 4, 3],
+        "enteredPassword": [5, 2, 4, 3],
+        "startTime": 1648551461846,
+        "endTime": 1648551465071,
+        "elapsedTimeInMilliseconds": 3225,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 2, 0, 3],
+        "enteredPassword": [1, 2, 0, 3],
+        "startTime": 1648551467435,
+        "endTime": 1648551470512,
+        "elapsedTimeInMilliseconds": 3077,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 3, 1, 4],
+        "enteredPassword": [0, 3, 1, 4],
+        "startTime": 1648551473410,
+        "endTime": 1648551475415,
+        "elapsedTimeInMilliseconds": 2005,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 2, 3, 4],
+        "enteredPassword": [1, 2, 3, 4],
+        "startTime": 1648551477662,
+        "endTime": 1648551478885,
+        "elapsedTimeInMilliseconds": 1223,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [6, 2, 5, 3],
+        "enteredPassword": [6, 2, 5, 3],
+        "startTime": 1648551482735,
+        "endTime": 1648551485466,
+        "elapsedTimeInMilliseconds": 2731,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [9, 6, 4, 2],
+        "enteredPassword": [9, 6, 4, 2],
+        "startTime": 1648551488373,
+        "endTime": 1648551490724,
+        "elapsedTimeInMilliseconds": 2351,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [5, 2, 4, 3],
+        "enteredPassword": [5, 2, 4, 3],
+        "startTime": 1648551493225,
+        "endTime": 1648551496033,
+        "elapsedTimeInMilliseconds": 2808,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 2, 0, 3],
+        "enteredPassword": [1, 2, 0, 3],
+        "startTime": 1648551498147,
+        "endTime": 1648551499757,
+        "elapsedTimeInMilliseconds": 1610,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 3, 1, 4],
+        "enteredPassword": [0, 3, 1, 4],
+        "startTime": 1648551502254,
+        "endTime": 1648551504204,
+        "elapsedTimeInMilliseconds": 1950,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 2, 3, 4],
+        "enteredPassword": [1, 2, 3, 4],
+        "startTime": 1648551506336,
+        "endTime": 1648551507648,
+        "elapsedTimeInMilliseconds": 1312,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [6, 2, 5, 3],
+        "enteredPassword": [],
+        "endTime": 1648551511550,
+        "elapsedTimeInMilliseconds": null,
+        "method": "PIN",
+        "numTicks": "10",
+        "endState": "ABORTED"
+      }
+    ],
+    "2022-03-29T11:00:32.469Z": [
+      {
+        "userPassword": [0, 4, 2, 3],
+        "enteredPassword": [0, 4, 2, 3],
+        "startTime": 1648551643259,
+        "endTime": 1648551651507,
+        "elapsedTimeInMilliseconds": 8248,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 5, 4, 1],
+        "enteredPassword": [1, 5, 4, 1],
+        "startTime": 1648551655054,
+        "endTime": 1648551663258,
+        "elapsedTimeInMilliseconds": 8204,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [5, 3, 2, 5],
+        "enteredPassword": [5, 3, 2, 5],
+        "startTime": 1648551668554,
+        "endTime": 1648551683398,
+        "elapsedTimeInMilliseconds": 14844,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [4, 3, 4, 5],
+        "enteredPassword": [4, 3, 4, 5],
+        "startTime": 1648551688145,
+        "endTime": 1648551701616,
+        "elapsedTimeInMilliseconds": 13471,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 5, 2, 5],
+        "enteredPassword": [0, 5, 2, 5],
+        "startTime": 1648551707046,
+        "endTime": 1648551715208,
+        "elapsedTimeInMilliseconds": 8162,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 2, 3, 4],
+        "enteredPassword": [0, 2, 3, 4],
+        "startTime": 1648551761222,
+        "endTime": 1648551769517,
+        "elapsedTimeInMilliseconds": 8295,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 4, 2, 3],
+        "enteredPassword": [0, 4, 2, 3],
+        "startTime": 1648551776885,
+        "endTime": 1648551785501,
+        "elapsedTimeInMilliseconds": 8616,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 5, 4, 1],
+        "enteredPassword": [1, 5, 5, 5],
+        "startTime": 1648551790358,
+        "endTime": 1648551802073,
+        "elapsedTimeInMilliseconds": 11715,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "FAILURE"
+      },
+      {
+        "userPassword": [1, 5, 4, 1],
+        "enteredPassword": [1, 5, 4, 1],
+        "startTime": 1648551805939,
+        "endTime": 1648551815174,
+        "elapsedTimeInMilliseconds": 9235,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [5, 3, 2, 5],
+        "enteredPassword": [5, 3, 2, 5],
+        "startTime": 1648551819004,
+        "endTime": 1648551834464,
+        "elapsedTimeInMilliseconds": 15460,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [4, 3, 4, 5],
+        "enteredPassword": [4, 3, 4, 5],
+        "startTime": 1648551839392,
+        "endTime": 1648551850749,
+        "elapsedTimeInMilliseconds": 11357,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 5, 2, 5],
+        "enteredPassword": [0, 5, 2, 5],
+        "startTime": 1648551864722,
+        "endTime": 1648551877607,
+        "elapsedTimeInMilliseconds": 12885,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 2, 3, 4],
+        "enteredPassword": [0, 2, 3, 4],
+        "startTime": 1648551882412,
+        "endTime": 1648551890620,
+        "elapsedTimeInMilliseconds": 8208,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 4, 2, 3],
+        "enteredPassword": [0, 4, 2, 3],
+        "startTime": 1648551943606,
+        "endTime": 1648551951961,
+        "elapsedTimeInMilliseconds": 8355,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [1, 5, 4, 1],
+        "enteredPassword": [1, 5, 4, 1],
+        "startTime": 1648551957259,
+        "endTime": 1648551966120,
+        "elapsedTimeInMilliseconds": 8861,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [5, 3, 2, 5],
+        "enteredPassword": [5, 3, 2, 5],
+        "startTime": 1648551969652,
+        "endTime": 1648551977945,
+        "elapsedTimeInMilliseconds": 8293,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [4, 3, 4, 5],
+        "enteredPassword": [4, 3, 4, 5],
+        "startTime": 1648551981865,
+        "endTime": 1648551991862,
+        "elapsedTimeInMilliseconds": 9997,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 5, 2, 5],
+        "enteredPassword": [0, 5, 2, 5],
+        "startTime": 1648551996291,
+        "endTime": 1648552003830,
+        "elapsedTimeInMilliseconds": 7539,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 2, 3, 4],
+        "enteredPassword": [0, 2, 3, 4],
+        "startTime": 1648552007564,
+        "endTime": 1648552015641,
+        "elapsedTimeInMilliseconds": 8077,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "SUCCESS"
+      },
+      {
+        "userPassword": [0, 4, 2, 3],
+        "enteredPassword": [],
+        "endTime": 1648552020194,
+        "elapsedTimeInMilliseconds": null,
+        "method": "tap",
+        "numTicks": "6",
+        "endState": "ABORTED"
+      }
+    ]
+  }
+}
